@@ -17,7 +17,7 @@ export function NavGroup({ name, items }: NavGroupProps) {
 			<CollapsibleContent>
 				<ul className="flex w-full flex-col gap-1">
 					{items.map((item, index) => (
-						<NavList key={item.title || index} data={item} depth={1} />
+						<NavList key={item.title || index} data={item}  depth={1} />
 					))}
 				</ul>
 			</CollapsibleContent>
