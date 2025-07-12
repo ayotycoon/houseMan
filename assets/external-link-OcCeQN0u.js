@@ -1,0 +1,1 @@
+import{b4 as r,j as a}from"./index-CXWctJX2.js";import{a as e}from"./vendor-core-vYitwEFY.js";import"./vendor-utils-Bb8B3hEB.js";import"./vendor-ui-BIutHCSA.js";function u({src:t}){const{back:o}=r();return e.useLayoutEffect(()=>{window.open(t,"_black"),o()}),a.jsx("div",{})}export{u as default};
