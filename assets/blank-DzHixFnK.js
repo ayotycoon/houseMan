@@ -1,0 +1,1 @@
+import{j as r,C as t}from"./index-hK64BZii.js";import"./vendor-utils-D56E7WW6.js";import"./vendor-core-C2O2dLVs.js";import"./vendor-ui-Bj3frcKa.js";function p(){return r.jsx(t,{})}export{p as default};
