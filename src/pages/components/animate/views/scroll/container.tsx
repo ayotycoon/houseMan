@@ -18,6 +18,7 @@ export default function ContainerView({ variant }: Props) {
 		>
 			{[...Array(40)].map((_, index) => (
 				// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+				// @ts-ignore
 				<MotionViewport key={index} variants={varients} className="mt-4">
 					<Card>
 						<span className="text-center">Item {index + 1}</span>

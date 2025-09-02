@@ -13,6 +13,16 @@ export const DB_MENU: Menu[] = [
 
 	// group_dashboard
 	{
+		id: "explore",
+		parentId: "group_dashboard",
+		name: "sys.nav.my.listings",
+		code: "my.listings",
+		icon: "local:ic-workbench",
+		type: MENU,
+		path: "/listings",
+		component: "/pages/dashboard/listings",
+	},
+	{
 		id: "workbench",
 		parentId: "group_dashboard",
 		name: "sys.nav.workbench",

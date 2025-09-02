@@ -84,6 +84,15 @@ const DASHBOARD_PERMISSION = {
 		{
 			id: "8426999229400979",
 			parentId: "9100714781927703",
+			label: "sys.nav.my.listings",
+			name: "My Listings",
+			type: PermissionType.MENU,
+			route: "explore",
+			component: "/dashboard/explore/index.tsx",
+		},
+		{
+			id: "8426999229400979",
+			parentId: "9100714781927703",
 			label: "sys.nav.workbench",
 			name: "Workbench",
 			type: PermissionType.MENU,

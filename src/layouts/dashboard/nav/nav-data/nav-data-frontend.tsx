@@ -7,6 +7,11 @@ export const frontendNavData: NavProps["data"] = [
 		name: "sys.nav.dashboard",
 		items: [
 			{
+				title: "sys.nav.my.listings",
+				path: "/listings",
+				icon: <Icon icon="local:ic-listings" size="24" />,
+			},
+			{
 				title: "sys.nav.workbench",
 				path: "/workbench",
 				icon: <Icon icon="local:ic-workbench" size="24" />,

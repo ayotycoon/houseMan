@@ -10,6 +10,7 @@ import {
 const fakeComment = (count: number): TaskComment[] => {
 	const result = [];
 	for (let index = 0; index < count; index += 1) {
+		// @ts-ignore
 		result.push({
 			username: faker.person.fullName(),
 			avatar: faker.image.avatarGitHub(),
@@ -23,6 +24,7 @@ const fakeComment = (count: number): TaskComment[] => {
 const fakeAttachment = (count: number) => {
 	const result = [];
 	for (let index = 0; index < count; index += 1) {
+		// @ts-ignore
 		result.push(faker.image.urlPicsumPhotos());
 	}
 	return result;
@@ -31,6 +33,7 @@ const fakeAttachment = (count: number) => {
 const fakeAssignee = (count: number) => {
 	const result = [];
 	for (let index = 0; index < count; index += 1) {
+		// @ts-ignore
 		result.push(faker.image.avatarGitHub());
 	}
 	return result;
@@ -43,6 +46,7 @@ const fakeTag = (count: number) => {
 	while (uniqueArray.length < count) {
 		const randomElement = faker.helpers.enumValue(TaskTag);
 		if (!set.has(randomElement)) {
+			// @ts-ignore
 			uniqueArray.push(randomElement);
 			set.add(randomElement);
 		}

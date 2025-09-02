@@ -4,7 +4,7 @@ import { useLocation } from "react-router";
 import type { NavListProps } from "../types";
 import { NavItem } from "./nav-item";
 
-export function NavList({ data, depth = 1 }: NavListProps) {
+export function NavList({ data,depth = 1 }: NavListProps) {
 	const location = useLocation();
 	const [open, setOpen] = useState(false);
 	const hasChild = data.children && data.children.length > 0;
@@ -13,6 +13,7 @@ export function NavList({ data, depth = 1 }: NavListProps) {
 	const handleClick = () => {
 		if (hasChild) {
 			setOpen(!open);
+
 		}
 	};
 
@@ -26,6 +27,7 @@ export function NavList({ data, depth = 1 }: NavListProps) {
 				<NavItem
 					// data
 					title={data.title}
+
 					path={data.path}
 					icon={data.icon}
 					info={data.info}
